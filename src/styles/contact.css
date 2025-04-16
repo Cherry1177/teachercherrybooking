@@ -1,0 +1,148 @@
+/* Center layout */
+.form-wrapper {
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #e0efff, #c2dbf8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  /* White rounded box */
+  .form-card {
+    background-color: white;
+    padding: 2.5rem 2rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    max-width: 480px;
+    width: 100%;
+  }
+  
+  /* Headings */
+  .form-card h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 0.3rem;
+    color: #1f2937;
+  }
+  
+  .form-card p {
+    text-align: center;
+    color: #6b7280;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Input rows */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .input-row {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 0.85rem;
+    margin-bottom: 0.3rem;
+    color: #374151;
+  }
+  
+  input {
+    padding: 0.6rem 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid #d1d5db;
+    font-size: 0.95rem;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px #dbeafe;
+  }
+  
+  /* Button */
+  button {
+    width: 100%;
+    background-color: #1e2563;
+    color: white;
+    padding: 0.75rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: #1b1f56;
+  }
+  
+  /* Footer note */
+  .note {
+    margin-top: 1.8rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #4b5563;
+  }
+  
+  /* Status Messages */
+  .success-msg {
+    margin-top: 1rem;
+    color: green;
+    text-align: center;
+  }
+  
+  .error-msg {
+    margin-top: 1rem;
+    color: crimson;
+    text-align: center;
+  }
+  
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .popup-box {
+    background: white;
+    padding: 2rem 2.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.2);
+    animation: fadeIn 0.4s ease-in-out;
+  }
+  
+  .popup-box h2 {
+    color: #047857;
+    margin-bottom: 0.5rem;
+  }
+  
+  .popup-box p {
+    color: #374151;
+  }
+  
+  /* Optional animation */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to   { opacity: 1; transform: scale(1); }
+  }
+  
